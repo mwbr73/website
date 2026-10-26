@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-de="Maximilian Weber · Informatik" data-title-en="Maximilian Weber · Computer Science">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maximilian Weber · Computer Science</title>
+  <meta name="description" content="Maximilian Weber – computer science master's student at THM. DevOps, test infrastructure, CI/CD and hardware-bound systems.">
+  <meta name="author" content="Maximilian Weber">
+  <link rel="canonical" href="https://maximilian-weber.dev/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Maximilian Weber · Computer Science">
+  <meta property="og:description" content="DevOps, test infrastructure, CI/CD and hardware-bound systems.">
+  <meta property="og:image" content="https://maximilian-weber.dev/assets/img/portrait.jpg">
+  <meta property="og:url" content="https://maximilian-weber.dev/">
+  <meta property="og:type" content="profile">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span lang="de">Zum Inhalt springen</span><span lang="en">Skip to content</span></a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Maximilian Weber">MW</a>
+      <nav aria-label="Navigation">
+        <a href="#about"><span lang="de">Profil</span><span lang="en">Profile</span></a>
+        <a href="#thesis"><span lang="de">Thesis</span><span lang="en">Thesis</span></a>
+        <a href="#projects"><span lang="de">Projekte</span><span lang="en">Projects</span></a>
+        <a href="#path"><span lang="de">Werdegang</span><span lang="en">Background</span></a>
+        <a href="#contact"><span lang="de">Kontakt</span><span lang="en">Contact</span></a>
+      </nav>
+      <button class="langswitch" type="button" data-lang-toggle aria-label="Sprache wechseln / Switch language">
+        <span lang="de">EN</span><span lang="en">DE</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ───────── Hero ───────── -->
+    <section class="hero wrap" id="top">
+      <div class="hero__text">
+        <p class="eyebrow"><span lang="de">Informatik M.Sc. (Student) · THM Gießen</span><span lang="en">Computer Science M.Sc. student · THM Giessen</span></p>
+        <h1>Maximilian Weber</h1>
+        <p class="lead">
+          <span lang="de">Ich baue Testinfrastruktur, CI/CD-Pipelines und Deployments, die auch dann funktionieren, wenn echte Hardware im Spiel ist, und habe Spaß an allem zwischen Kubernetes-Cluster und Mikrocontroller.</span>
+          <span lang="en">I build test infrastructure, CI/CD pipelines and deployments that still hold up when real hardware is involved, and I enjoy everything between a Kubernetes cluster and a microcontroller.</span>
+        </p>
+        <ul class="links" aria-label="Links">
+          <li><a class="btn btn--primary" href="mailto:mwbr@weberwz.de"><span lang="de">E-Mail schreiben</span><span lang="en">Send an email</span></a></li>
+          <!-- TODO: optional: Lebenslauf-PDF ohne private Daten (Geburtsdatum, Telefon, Adresse) nach assets/cv/ legen, dann "hidden" entfernen -->
+          <li hidden><a class="btn" href="assets/cv/Lebenslauf_Maximilian_Weber.pdf" download><span lang="de">Lebenslauf (PDF)</span><span lang="en">CV (PDF)</span></a></li>
+          <li><a class="btn" href="https://github.com/mwbr73" rel="me">GitHub</a></li>
+          <li><a class="btn" href="https://gitlab.com/mwbr73" rel="me">GitLab</a></li>
+          <li><a class="btn" href="https://www.linkedin.com/in/maximilian-weber-56a61722a/" rel="me">LinkedIn</a></li>
+          <li><a class="btn" href="https://orcid.org/0009-0006-6940-8321" rel="me">ORCID</a></li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <img src="assets/img/portrait.jpg" alt="Portrait Maximilian Weber" width="320" height="320" data-portrait>
+        <div class="portrait__fallback" aria-hidden="true">MW</div>
+      </figure>
+    </section>
+
+    <!-- ───────── Profil ───────── -->
+    <section class="section wrap" id="about">
+      <h2><span lang="de">Profil</span><span lang="en">Profile</span></h2>
+      <div class="prose">
+        <p lang="de">
+          Ich studiere Informatik im Master an der Technischen Hochschule Mittelhessen (THM), wo ich 2026 auch meinen Bachelor abgeschlossen habe. Nebenher arbeite ich als studentische Aushilfe bei <a href="https://micro.mni.thm.de/">MICRO</a>, dem Remote-Lab der THM für Embedded Systems, und kümmere mich dort um DevOps: Tests, Pipelines, Prozessoptimierung und das Deployment mit GitLab CI, Ansible, k3s, Kustomize und Argo CD. Für dasselbe System habe ich in meiner Bachelorarbeit eine schlanke, automatisierte Testinfrastruktur entworfen, umgesetzt und evaluiert.
+        </p>
+        <p lang="en">
+          I'm a master's student in computer science at Technische Hochschule Mittelhessen (THM), where I also completed my bachelor's degree in 2026. Alongside my studies I work as a student assistant at <a href="https://micro.mni.thm.de/">MICRO</a>, THM's remote lab for embedded systems, where I focus on DevOps: testing, pipelines, process improvement and deployment with GitLab CI, Ansible, k3s, Kustomize and Argo CD. For the same system, my bachelor's thesis designed, built and evaluated a lightweight, automated test infrastructure.
+        </p>
+        <p lang="de">
+          Mich interessiert, wie man Softwarequalität pragmatisch absichert: mit klaren Schnittstellenverträgen, CI-Gates statt Bürokratie und Tests, die echte Fehler finden. Hardware begleitet mich schon länger: Bei THM Motorsport habe ich den Bereich Data-Recording &amp; Electronics verantwortet, und privat baue ich zum Beispiel an der Firmware meiner eigenen Split-Tastatur.
+        </p>
+        <p lang="en">
+          I care about keeping software quality high in a pragmatic way: clear interface contracts, CI gates instead of bureaucracy, and tests that catch real bugs. Hardware has been part of it for a while: at THM Motorsport I led the data recording &amp; electronics department, and in my spare time I work on things like the firmware for my own split keyboard.
+        </p>
+      </div>
+
+      <h3 class="subhead"><span lang="de">Kenntnisse</span><span lang="en">Skills</span></h3>
+      <dl class="skills">
+        <div>
+          <dt>DevOps &amp; Deployment</dt>
+          <dd><ul class="tags"><li>GitLab CI/CD</li><li>GitHub Actions</li><li>Docker</li><li>k3s / Kubernetes</li><li>Kustomize</li><li>Argo CD</li><li>Ansible</li><li>nginx</li><li>Linux</li></ul></dd>
+        </div>
+        <div>
+          <dt><span lang="de">Testing &amp; Qualität</span><span lang="en">Testing &amp; quality</span></dt>
+          <dd><ul class="tags"><li>pytest</li><li>coverage.py</li><li>Mutation Testing</li><li>OpenAPI / Swagger</li><li>ISO/IEC/IEEE 29119</li></ul></dd>
+        </div>
+        <div>
+          <dt><span lang="de">Entwicklung</span><span lang="en">Development</span></dt>
+          <dd><ul class="tags"><li>Python</li><li>Flask</li><li>Java</li><li>C</li><li>C++</li><li>SQL</li><li>Vue.js</li><li>REST APIs</li></ul></dd>
+        </div>
+        <div>
+          <dt>Embedded &amp; Hardware</dt>
+          <dd><ul class="tags"><li>STM32</li><li>RP2040</li><li>QMK / ZMK</li><li><span lang="de">Platinenentwurf</span><span lang="en">PCB design</span></li><li>CAD</li></ul></dd>
+        </div>
+        <div>
+          <dt><span lang="de">Infrastruktur &amp; Netzwerk</span><span lang="en">Infrastructure &amp; networking</span></dt>
+          <dd><ul class="tags"><li>Proxmox VE</li><li><span lang="de">VLAN-Segmentierung</span><span lang="en">VLAN segmentation</span></li><li>Firewalls (OPNsense, Sophos)</li><li>Nginx Proxy Manager</li><li><span lang="de">Netzwerkadministration</span><span lang="en">Network administration</span></li></ul></dd>
+        </div>
+        <div>
+          <dt><span lang="de">Security &amp; Methoden</span><span lang="en">Security &amp; methods</span></dt>
+          <dd><ul class="tags"><li>Penetration Testing (Kali)</li><li><span lang="de">ISO 27001 (Grundlagen)</span><span lang="en">ISO 27001 (basics)</span></li><li>IAM</li><li>Scrum</li><li>Kanban</li></ul></dd>
+        </div>
+        <div>
+          <dt><span lang="de">Sprachen</span><span lang="en">Languages</span></dt>
+          <dd><ul class="tags"><li><span lang="de">Deutsch (Muttersprache)</span><span lang="en">German (native)</span></li><li><span lang="de">Englisch (fließend)</span><span lang="en">English (fluent)</span></li><li>Latinum</li></ul></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ───────── Bachelorarbeit ───────── -->
+    <section class="section wrap" id="thesis">
+      <h2><span lang="de">Bachelorarbeit</span><span lang="en">Bachelor's thesis</span></h2>
+      <article class="card card--feature">
+        <p class="meta"><span lang="de">THM · Fachbereich MNI · 2026</span><span lang="en">THM · Dept. of Mathematics, Natural Sciences and Computer Science · 2026</span></p>
+        <h3 lang="de">Konzeption, prototypische Umsetzung und Evaluierung einer leichtgewichtigen Testinfrastruktur für ein Brownfield-Remote-Lab auf Basis von ISO/IEC/IEEE&nbsp;29119</h3>
+        <h3 lang="en">Design, Prototypical Implementation, and Evaluation of a Lightweight Test Infrastructure for a Brownfield Remote Lab Based on ISO/IEC/IEEE&nbsp;29119</h3>
+
+        <p lang="de">
+          MICRO hatte keine systematischen Tests, nur implizite Schnittstellenverträge, und Breaking Changes fielen erst spät auf. Ich habe die Norm ISO/IEC/IEEE 29119 bewusst auf das Nötige reduziert: Statt eines Risikoregisters gibt es zwei kritische Testfaktoren, funktionale Korrektheit und Schnittstellenkonformität. Beide werden über blockierende CI-Gates durchgesetzt statt über verpflichtende Reviews. Am Beispiel des UART-Service entstanden Unit- und Integrationstests, eine vollständig aus dem Code generierte API-Spezifikation und ein eigener Check, der undokumentierte oder ungetestete Routen findet.
+        </p>
+        <p lang="en">
+          MICRO had no systematic testing and only implicit interface contracts, so breaking changes surfaced late. I deliberately cut the ISO/IEC/IEEE 29119 standard down to what was needed: instead of a risk register, two critical test factors, functional correctness and interface conformance, are enforced through blocking CI gates rather than mandatory reviews. Using the UART service as the case study, I built unit and integration tests, an API specification generated entirely from the code, and a custom check that flags routes that are undocumented or untested.
+        </p>
+
+        <dl class="stats">
+          <div><dt>111</dt><dd><span lang="de">Unit-Tests</span><span lang="en">unit tests</span></dd></div>
+          <div><dt>23</dt><dd><span lang="de">Integrationstests</span><span lang="en">integration tests</span></dd></div>
+          <div><dt>77&nbsp;%</dt><dd>Branch Coverage</dd></div>
+          <div><dt><span lang="de">57,5&nbsp;%</span><span lang="en">57.5&nbsp;%</span></dt><dd><span lang="de">Mutation-Kill-Rate</span><span lang="en">mutation kill rate</span></dd></div>
+        </dl>
+
+        <p lang="de">
+          Evaluiert habe ich das Ganze mit Mutation Testing, einer zweistufigen Entwicklerumfrage und einem Experteninterview. Ein Ergebnis: In einem hardwaregebundenen System stoßen klassische Unit-Test-Prinzipien messbar an ihre Grenzen.
+        </p>
+        <p lang="en">
+          The evaluation combined mutation testing, a two-round developer survey and an expert interview. One finding: in a hardware-bound system, classical unit-testing principles hit measurable limits.
+        </p>
+
+        <ul class="tags tags--small" aria-label="Technologien / Technologies">
+          <li>Python</li><li>pytest</li><li>coverage.py</li><li>Flask</li><li>apispec / OpenAPI</li>
+          <li>Swagger UI</li><li>GitLab CI/CD</li><li>mutmut</li><li>Design Science Research</li>
+        </ul>
+
+        <p class="fine">
+          <span lang="de">Betreuung: Prof. Dr.-Ing. Diethelm Bienhaus, Jakob Czekansky M.Sc. · Volltext auf Anfrage.</span>
+          <span lang="en">Supervised by Prof. Dr.-Ing. Diethelm Bienhaus and Jakob Czekansky M.Sc. · Full text available on request.</span>
+        </p>
+      </article>
+    </section>
+
+    <!-- ───────── Projekte ───────── -->
+    <section class="section wrap" id="projects">
+      <h2><span lang="de">Projekte</span><span lang="en">Projects</span></h2>
+      <div class="grid">
+        <article class="card">
+          <p class="meta"><span lang="de">Privat · Hardware</span><span lang="en">Personal · hardware</span></p>
+          <h3><a href="https://github.com/mwbr73/corne42">corne42</a></h3>
+          <p lang="de">Firmware und Layout für meine 42-Tasten-Split-Tastatur, in zwei Varianten: QMK/Vial (RP2040, kabelgebunden) und ZMK (nice!nano, Bluetooth). Home-Row-Mods, eigene Symbol- und Gaming-Layer, ein OLED-Statusbild und eine Keymap-Grafik, die die CI automatisch rendert.</p>
+          <p lang="en">Firmware and layout for my 42-key split keyboard, in two variants: QMK/Vial (RP2040, wired) and ZMK (nice!nano, Bluetooth). Home-row mods, custom symbol and gaming layers, an OLED status screen and a keymap diagram rendered automatically in CI.</p>
+          <ul class="tags tags--small"><li>C</li><li>QMK</li><li>ZMK</li><li>CI</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="meta"><span lang="de">Studium · Teamprojekt</span><span lang="en">University · team project</span></p>
+          <h3><a href="https://gitlab.com/mwbr73/mycargonaut">myCargonaut</a></h3>
+          <p lang="de">Full-Stack-Webanwendung, im Team entwickelt: Java-Backend, Vue-Frontend und MariaDB, containerisiert mit Docker Compose und gebaut über GitLab CI.</p>
+          <p lang="en">Full-stack web application built as a team: Java backend, Vue frontend and MariaDB, containerised with Docker Compose and built through GitLab CI.</p>
+          <ul class="tags tags--small"><li>Java</li><li>Vue.js</li><li>MariaDB</li><li>Docker</li><li>GitLab CI</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="meta"><span lang="de">Studium · KI</span><span lang="en">University · AI</span></p>
+          <h3><a href="https://github.com/mwbr73/LKID">LKID</a></h3>
+          <p lang="de">Das Brettspiel „Lass die Kirche im Dorf“ samt Varianten, umgesetzt für das AlphaZero-Framework <em>alpha-zero-general</em>, damit eine KI es durch Self-Play lernt. Dazu gibt es eine Pygame-Oberfläche zum Selberspielen.</p>
+          <p lang="en">The board game “Lass die Kirche im Dorf” and its variants, implemented for the <em>alpha-zero-general</em> framework so an AI can learn it through self-play. It comes with a Pygame interface for playing against it.</p>
+          <ul class="tags tags--small"><li>Python</li><li>AlphaZero</li><li>TensorFlow</li><li>Pygame</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="meta"><span lang="de">Studium · Elektronik</span><span lang="en">University · electronics</span></p>
+          <h3><a href="https://gitlab.com/studium5332918/pepe">PePe</a></h3>
+          <p lang="de">Steuerplatine für den Schacht des THM-Aufzugmodells, als Aufsteckplatine für ein STM32F4 Discovery: H-Brücke für zwei Kabinen, Strommessung über Shunts, Endtaster als Hardware-Abschaltung, Anschlüsse für Positionssensoren und CAN-Bus. Zu zweit von Schaltplan bis Prüfprotokoll entwickelt.</p>
+          <p lang="en">Control board for the shaft of THM's elevator model, built as a shield for an STM32F4 Discovery: an H-bridge for two cars, shunt-based current sensing, limit switches as a hardware cut-off, connectors for position sensors and CAN bus. Developed as a team of two, from schematic to test report.</p>
+          <ul class="tags tags--small"><li>STM32</li><li>KiCad</li><li>CAN</li><li><span lang="de">Platinenentwurf</span><span lang="en">PCB design</span></li><li><span lang="de">Elektronik</span><span lang="en">Electronics</span></li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────── Werdegang ───────── -->
+    <section class="section wrap" id="path">
+      <h2><span lang="de">Werdegang</span><span lang="en">Background</span></h2>
+      <ol class="timeline">
+        <!-- Vorlage für weitere Stationen:
+        <li>
+          <p class="timeline__when">MM/JJJJ – MM/JJJJ</p>
+          <h3><span lang="de">Titel</span><span lang="en">Title</span></h3>
+          <p class="timeline__where">Arbeitgeber · Ort</p>
+          <p lang="de">Beschreibung</p><p lang="en">Description</p>
+        </li>
+        -->
+        <li class="timeline__item--edu">
+          <p class="timeline__when"><span lang="de">seit 10/2026</span><span lang="en">since 10/2026</span></p>
+          <h3><span lang="de">Informatik (M.Sc.)</span><span lang="en">Computer Science (M.Sc.)</span></h3>
+          <p class="timeline__where">Technische Hochschule Mittelhessen · Gießen</p>
+        </li>
+        <li>
+          <p class="timeline__when"><span lang="de">seit 07/2026</span><span lang="en">since 07/2026</span></p>
+          <h3><span lang="de">Studentische Aushilfe DevOps</span><span lang="en">Student assistant, DevOps</span></h3>
+          <p class="timeline__where">MICRO Remote Lab · Technische Hochschule Mittelhessen · Gießen</p>
+          <p lang="de">Testing, CI/CD-Pipelines und Prozessoptimierung. Umstellung der Lab-Stationen von Ansible/Docker Compose auf ein GitOps-Deployment mit k3s, Kustomize und Argo CD sowie Mitarbeit an wiederverwendbaren GitLab-CI-Komponenten.</p>
+          <p lang="en">Testing, CI/CD pipelines and process improvement. Migrated the lab stations from Ansible/Docker Compose to a GitOps deployment with k3s, Kustomize and Argo CD, and contributed to reusable GitLab CI components.</p>
+        </li>
+        <li>
+          <p class="timeline__when">06/2025 – 01/2026</p>
+          <h3><span lang="de">Studentische Aushilfe IT-Administration</span><span lang="en">Student assistant, IT administration</span></h3>
+          <p class="timeline__where">Caritasverband Wetzlar · <span lang="de">Einsatz an der Lahntalschule Lahnau</span><span lang="en">at Lahntalschule, Lahnau</span></p>
+          <p lang="de">Netzwerkadministration und Betreuung der Schulplattform iServ.</p>
+          <p lang="en">Network administration and support for the school's iServ platform.</p>
+        </li>
+        <li class="timeline__item--edu">
+          <p class="timeline__when">2021 – 09/2026</p>
+          <h3><span lang="de">Informatik (B.Sc.)</span><span lang="en">Computer Science (B.Sc.)</span></h3>
+          <p class="timeline__where">Technische Hochschule Mittelhessen · Gießen</p>
+          <p lang="de">Abschlussnote 2,0. Bachelorarbeit zur Testinfrastruktur des Remote-Labs MICRO (siehe oben).</p>
+          <p lang="en">Final grade 2.0 (German scale). Bachelor's thesis on test infrastructure for the MICRO remote lab (see above).</p>
+        </li>
+        <li>
+          <p class="timeline__when">10/2022 – 08/2024</p>
+          <h3><span lang="de">Leitung Data-Recording &amp; Electronics</span><span lang="en">Head of Data Recording &amp; Electronics</span></h3>
+          <p class="timeline__where">THM Motorsport – Team Racing · Gießen</p>
+          <p lang="de">Hauptverantwortlich für Datenaufzeichnung und Elektronik im studentischen Rennteam, inklusive CAD-Konstruktion.</p>
+          <p lang="en">Responsible for data recording and electronics in the student racing team, including CAD design.</p>
+        </li>
+        <li>
+          <p class="timeline__when">02/2022 – 11/2023</p>
+          <h3><span lang="de">Aushilfe</span><span lang="en">Part-time worker</span></h3>
+          <p class="timeline__where">Deutsche Post und DHL · Langgöns · <span lang="de">Teilzeit</span><span lang="en">part-time</span></p>
+        </li>
+        <li class="timeline__item--edu">
+          <p class="timeline__when">2018 – 2021</p>
+          <h3><span lang="de">Allgemeine Hochschulreife</span><span lang="en">Abitur (university entrance qualification)</span></h3>
+          <p class="timeline__where">Werner-von-Siemens-Schule · Wetzlar</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────── Kontakt ───────── -->
+    <section class="section wrap" id="contact">
+      <h2><span lang="de">Kontakt</span><span lang="en">Contact</span></h2>
+      <div class="card contact">
+        <p lang="de">Ich freue mich über Nachrichten zu offenen Stellen, Projekten oder einfach zum Austausch.</p>
+        <p lang="en">I'm happy to hear about open positions, projects, or just to chat.</p>
+        <p class="contact__mail"><a href="mailto:mwbr@weberwz.de">mwbr@weberwz.de</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© 2026 Maximilian Weber</p>
+      <p>
+        <a href="impressum.html"><span lang="de">Impressum &amp; Datenschutz</span><span lang="en">Legal notice &amp; privacy</span></a>
+        · <span lang="de">Keine Cookies, kein Tracking.</span><span lang="en">No cookies, no tracking.</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
