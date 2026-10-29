@@ -5,6 +5,7 @@ Quelltext von **[maximilian-weber.dev](https://maximilian-weber.dev)**: statisch
 ```
 index.html          Startseite (EN + DE nebeneinander via lang-Attribut)
 impressum.html      Impressum & Datenschutz
+404.html            Fehlerseite für unbekannte Adressen
 assets/style.css    Design (hell/dunkel automatisch, Druckansicht)
 assets/main.js      Sprachumschaltung + Foto-Fallback
 assets/img/         Portrait

@@ -19,9 +19,10 @@ jobs:
       - name: Check HTML links to local files
         run: |
           missing=0
-          for f in index.html impressum.html; do
+          for f in index.html impressum.html 404.html; do
             for ref in $(grep -oE '(href|src)="[^"#:?]+"' "$f" | sed -E 's/.*="([^"]+)"/\1/'); do
-              case "$ref" in ./|*/) continue ;; esac
+              ref="${ref#/}"   # absolute Pfade (404.html) relativ zum Repo prüfen
+              case "$ref" in ""|./|*/) continue ;; esac
               # Foto und Lebenslauf sind optional (Fallback bzw. versteckter Button)
               case "$ref" in assets/img/portrait.jpg|assets/cv/*) continue ;; esac
               [ -e "$ref" ] || { echo "::error file=$f::fehlt: $ref"; missing=1; }
